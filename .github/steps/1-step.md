@@ -3,12 +3,10 @@
 In this exercise, you'll learn how to use Model Context Protocol (MCP) to connect GitHub Copilot to your entire toolchain.
 This integration allows you to solve problems across platforms without leaving your code editor. **Less context switching, more coding**.
 
-> [!IMPORTANT]
-> This exercise may not explain the Copilot basics that were introduced in the [Getting Started with Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise. If you are new to Copilot we recommend starting with that one.
-
 ### What is Model Context Protocol (MCP)?
 
 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) is often referred to as "USB-C for AI" - a universal connector that allows GitHub Copilot to seamlessly interact with external tooling.
+
 ```mermaid
 graph LR
     A[Developer] -->|Uses| B[GitHub Copilot]
@@ -40,12 +38,33 @@ We are using the same web application as in the [Getting Started with Copilot](h
 
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
 
-1. Validate the Copilot Chat extension is installed
+1. Validate the Copilot Chat and Python extensions are installed and enabled
+   <details>
+   <summary>:camera_flash: See screenshot</summary><br/>
+
+   <img width="350" alt="copilot extension for VS Code" src="https://github.com/user-attachments/assets/ef1ef984-17fc-4b20-a9a6-65a866def468" />
+
+   <img width="350" alt="python extension for VS Code" src="https://github.com/user-attachments/assets/3040c0f5-1658-47e2-a439-20504a384f77" />
+   </details>
+
 1. In the left sidebar, select the `Run and Debug` tab and then press the **Start Debugging** icon.
 
-   <img width="300" alt="image" src="https://github.com/user-attachments/assets/50b27f2a-5eab-4827-9343-ab5bce62357e" />
+   <details>
+   <summary>:camera_flash: See screenshot</summary><br/>
+
+   <img width="300" alt="run and debug" src="https://github.com/user-attachments/assets/50b27f2a-5eab-4827-9343-ab5bce62357e" />
+
+   </details>
 
 1. Throughout the exercise, you can access the website link from the `ports` tab on port `8000`.
+
+   <details>
+   <summary>:camera_flash: See screenshot</summary><br/>
+       
+    <img width="200" alt="ports tab" src="https://github.com/user-attachments/assets/bd25ed3c-0656-448c-b809-edc10c0ab6cf" />
+
+
+   </details>
 
 ### :keyboard: Activity: Set up a MCP server for your project
 
@@ -54,23 +73,23 @@ We are using the same web application as in the [Getting Started with Copilot](h
    ```json
    // .vscode/mcp.json
    {
-   "servers": {
-      "github": {
+     "servers": {
+       "github": {
          "command": "npx",
          "args": ["-y", "@modelcontextprotocol/server-github"],
          "env": {
-         "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:githubToken}"
+           "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:githubToken}"
          }
-      }
-   },
-   "inputs": [
-      {
+       }
+     },
+     "inputs": [
+       {
          "type": "promptString",
          "id": "githubToken",
          "description": "Enter your GitHub personal access token",
          "password": true
-      }
-   ]
+       }
+     ]
    }
    ```
 
