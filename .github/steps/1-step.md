@@ -109,6 +109,8 @@ Since we are using GitHub, we have asked our fellow teachers to submit their ide
    - **Personal Access Token:** (skip)
    - **Location:** `Workspace Settings`
 
+   > ⚠️ **Warning:** We are using a community developed MCP server. The [official GitHub MCP server](https://github.com/github/github-mcp-server) is still in [public preview](https://docs.github.com/en/get-started/using-github/exploring-early-access-releases-with-feature-preview) and may cause breaking changes.
+
 1. Entering a hard-coded token is not safe, so let's switch to using an input. Replace the token placeholder with an input variable.
 
    📄 **.vscode/mcp.json**
