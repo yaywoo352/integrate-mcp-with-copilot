@@ -24,9 +24,11 @@ Isn't that cool?! Now let's do it! 👩‍🚀
 
 ### :keyboard: Activity: Quickly find and save ideas
 
-1. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
+1. Close any open files. This will help reduce unnecessary context.
 
-1. Ask copilot to search github for projects similar to this one.
+2. Ensure the **Copilot Chat** panel is open and **Agent** mode is selected. Verify the MCP server tools are also still available.
+
+3. Ask copilot to search github for projects similar to this one.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -34,11 +36,11 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Are their any other repositories for organizing extra curricular actitivities?
    > ```
 
-1. When an MCP tool is required, Copilot will ask permission to use it.
+4. When an MCP tool is required, Copilot will ask permission. Click **Continue**.
 
-   📸 📸📸📸📸 Insert screenshot of request to run tool
+   <img width="250" alt="request permission dialog" src="https://github.com/user-attachments/assets/d14ea944-5443-4b8a-a4d2-ae677fdb274c" />
 
-1. Ask Copilot to describe one of the projects.
+5. Ask Copilot to describe one of the projects.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -46,7 +48,15 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Please look at the code for the 3rd option and give me a detailed description of the features.
    > ```
 
-1. Use Copilot to compare and generate ideas for enhancements.
+6. (optional) You might pick a project that is still young. If that happens, Copilot might say there isn't much to describe. Instead just ask to review a different one. Example:
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Ok. How about the first one then?
+   > ```
+
+7. Use Copilot to compare and generate ideas for enhancements.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -54,7 +64,7 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > Which of these features would be new for our project?
    > ```
 
-1. Nice! Let's have Copilot create issues to save these ideas.
+8. Nice! Let's have Copilot create issues to save these ideas.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -62,18 +72,22 @@ Isn't that cool?! Now let's do it! 👩‍🚀
    > I like it. Let's create issues for these.
    > ```
 
-1. Let's see if the author has other projects we might be interested in.
+9. Copilot will ask for permssion to create issues on your repository. Click **Continue** for each new issue.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > What was the name of the owner of the repo we just reviewed?
-   > Search GitHub and give me a summary of other projects they have recently worked on.
-   > ```
+   <img width="250" alt="request permission dialog" src="https://github.com/user-attachments/assets/52635294-950a-4168-b71e-498eb769f3af" />
 
-   > 🪧 **Note:** We explicitly asked about the owner to help guide Copilot with the relative reference.
+10. With the new issues created, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
 
-1. With the new issues created, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
+11. (Optional) Let's see if the author has other projects we might be interested in.
+
+    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+    >
+    > ```prompt
+    > What was the name of the owner of the repo we just reviewed?
+    > Search GitHub and give me a summary of other projects they have recently worked on.
+    > ```
+
+    > 🪧 **Note:** We explicitly asked about the owner to help guide Copilot with the relative reference.
 
 ### 💡 Important Notes
 

@@ -61,6 +61,15 @@ Let's start up our development environment and refamiliarize ourself with the ex
 
    </details>
 
+   <details>
+   <summary>🤷 Having trouble?</summary><br/>
+
+   If the **Run and Debug** area is empty, try reloading VS Code: Open the command palette (`Ctrl`+`Shift`+`P`) and search for `Developer: Reload Window`.
+
+   <img width="300" alt="empty run and debug panel" src="https://github.com/user-attachments/assets/0dbf1407-3a97-401a-a630-f462697082d6" />
+
+   </details>
+
 1. Use the **Ports** tab to find the webpage address, open it, and verify it is running.
 
    <details>
@@ -68,7 +77,7 @@ Let's start up our development environment and refamiliarize ourself with the ex
 
    <img width="350" alt="ports tab" src="https://github.com/user-attachments/assets/8d24d6b5-202d-4109-8174-2f0d1e4d8d44" />
 
-   ![Screenshot of Mergington High School WebApp](https://github.com/user-attachments/assets/472398fd-1aa1-4084-b443-4e242deb30d9)
+   ![Screenshot of Mergington High School WebApp](https://github.com/user-attachments/assets/5cb88d53-d948-457e-9f4b-403d697fa93a)
 
    </details>
 
@@ -86,7 +95,7 @@ Since we are using GitHub, we have asked our fellow teachers to submit their ide
 
    - Verify VS Code is at least `v1.99.0`.
    - Verify the Copilot extension is at least `v1.296.0`.
-   - Check if Agent mode is enabled in your user or workspace settings.
+   - Check if Agent mode is enabled in your [user or workspace settings](https://code.visualstudio.com/docs/configure/settings#_workspace-settings).
 
       <img width="300" alt="image" src="https://github.com/user-attachments/assets/407a79dd-707e-471b-b56b-1938aece4ad8" />
 
@@ -126,32 +135,13 @@ Since we are using GitHub, we have asked our fellow teachers to submit their ide
    }
    ```
 
-   <!-- > [!TIP]
-   > You might also try passing environment variables directly. -->
-
-   <!--
-   <details>
-   <summary>Why not ask Copilot to do this?</summary><br/>
-
-   Great idea! Here is a prompt you can try next time:
-
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > Add the `@modelcontextprotocol/server-github` MCP server to this project.
-   > Use an input for the PAT instead of hard coding it.
-   > ```
-
-   </details>
-   -->
-
 1. Expand the VS Code terminal panel. Run the following command to view and **make a copy** of your codespace's GitHub Token.
 
    ```bash
       echo $GITHUB_TOKEN
    ```
 
-1. In the `.vscode/mcp.json` file, click the `Start` button and provide the token. This has just informed GitHub Copilot of the MCP server's capabilities.
+1. In the `.vscode/mcp.json` file, click the **Start** button and provide the token. This has just informed GitHub Copilot of the MCP server's capabilities.
 
    ![image](https://github.com/user-attachments/assets/c82a4202-1f4a-4123-ad14-5e33ecd6316c)
 
