@@ -2,8 +2,6 @@
 
 <img width="150" align="right" alt="copilot logo" src="https://github.com/user-attachments/assets/4d22496d-850b-4785-aafe-11cba03cd5f2" />
 
-Welcome to another Skills exercise!
-
 In the [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise, we were introduced to the Mergington High School's extracurricular activities website, which allowed students to sign up for events.
 
 And now we have a problem... but.. it's a good one! More teachers are asking to to use it! 🎉
@@ -41,7 +39,7 @@ graph LR
 
 ### :keyboard: Activity: Get to know your environment
 
-Let's start up our development environment and refamiliarize ourself with the extracurricular activity application.
+Before we dive into MCP, let's start up our development environment and refamiliarize ourself with the extracurricular activity application.
 
 1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
@@ -82,8 +80,6 @@ Let's start up our development environment and refamiliarize ourself with the ex
    </details>
 
 ### :keyboard: Activity: Add the GitHub MCP server
-
-Since we are using GitHub, we have asked our fellow teachers to submit their ideas and bugs as issues (instead of email).
 
 1. Inside your codespace, open the **Copilot Chat** panel and verify **Agent** mode is selected.
 
