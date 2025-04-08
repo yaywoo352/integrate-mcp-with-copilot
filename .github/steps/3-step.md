@@ -1,6 +1,6 @@
 ## Step 3: Solve issues with Agent Mode and GitHub MCP Server
 
-Great workd doing that research and finding a potential collaboration opportunity.
+Great work doing that research and finding a potential collaboration opportunity.
 Not only did we find some new ideas to help organize extracurricular activies, but we did all that quickly too.
 
 Plenty of time to focus on the fun stuff, like teaching our awesome students! 🌱
