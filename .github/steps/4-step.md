@@ -19,14 +19,14 @@ While AI assistants like GitHub Copilot can dramatically improve productivity, i
 
 1. Return to VS code and the active **Copilot Chat** session.
 
-   > 🪧 **Tip:** If you previously clicked Done and need to return to a previous conversation, use the **Show Chats** button at the top of the Copilot Chat panel to restore it.
+   > 🚨 **Important:** If you previously clicked Done and need to return to a previous conversation, use the **Show Chats** button at the top of the Copilot Chat panel to restore it.
 
 1. Ask Copilot to add a comment to the issue we just finished, and to say thanks for the comments and ideas.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Add a closing comment to the issue we just finished it. Provide a 1 sentence description
+   > Add a closing comment to the issue we just finished. Provide a 1 sentence description
    > of the implemented solution and thank the commenters for their ideas and feedback.
    > ```
 
