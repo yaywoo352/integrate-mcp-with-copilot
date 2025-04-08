@@ -102,14 +102,6 @@ Before we dive into MCP, let's start up our development environment and refamili
 
    ```json
    {
-     "inputs": [
-       {
-         "type": "promptString",
-         "id": "github_token",
-         "description": "GitHub Personal Access Token",
-         "password": true
-       }
-     ],
      "servers": {
        "github": {
          "command": "docker",
@@ -119,13 +111,21 @@ Before we dive into MCP, let's start up our development environment and refamili
            "--rm",
            "-e",
            "GITHUB_PERSONAL_ACCESS_TOKEN",
-           "ghcr.io/github/github-mcp-server"
+           "ghcr.io/github/github-mcp-server:v0.1.1"
          ],
          "env": {
            "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
          }
        }
-     }
+     },
+     "inputs": [
+       {
+         "type": "promptString",
+         "id": "github_token",
+         "description": "GitHub Personal Access Token",
+         "password": true
+       }
+     ]
    }
    ```
 
@@ -139,9 +139,9 @@ Before we dive into MCP, let's start up our development environment and refamili
 
 1. In the `.vscode/mcp.json` file, click the **Start** button and provide the token. This has just informed GitHub Copilot of the MCP server's capabilities.
 
-   ![image](https://github.com/user-attachments/assets/c82a4202-1f4a-4123-ad14-5e33ecd6316c)
+   ![image](https://github.com/user-attachments/assets/62ee9c06-e9d4-44e4-b6df-f93417474af2)
 
-   ![image](https://github.com/user-attachments/assets/80f3fcda-34a8-486e-95a3-c166e9152b9a)
+   ![image](https://github.com/user-attachments/assets/33195908-affe-488f-afef-e759498d1fe8)
 
 1. In the Copilot side panel, click the **🛠️ Select Tools...** icon to show the additional capabilities.
 
@@ -155,9 +155,8 @@ Before we dive into MCP, let's start up our development environment and refamili
 
 1. Now that your MCP server configuration is pushed to GitHub, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
 
-1. (optional) The next steps will interact with issues. If you would like to avoid notification emails, you can unwatch the repository by click this button.
-
-   <img width="300" alt="image" src="https://github.com/user-attachments/assets/c320d112-7291-41f8-8fe1-4b1f2a949871" />
+> [!NOTE]
+> The next steps will involve creating GitHub issues. If you would like to avoid notification emails, you can unwatch the repository.
 
 <details>
 <summary>Having trouble?</summary><br/>
