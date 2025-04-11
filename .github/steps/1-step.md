@@ -137,6 +137,13 @@ Before we dive into MCP, let's start up our development environment and refamili
       echo $GITHUB_TOKEN
    ```
 
+   <details>
+   <summary>Why do I need this?</summary><br/>
+
+   The MCP server is a separate background process and needs credentials to perform operations. In this case, we use the temporary [codespace authorization](https://docs.github.com/en/enterprise-cloud@latest/codespaces/reference/security-in-github-codespaces#authentication) credential which becomes invalid when the codespace stops.
+
+   </details>
+
 1. In the `.vscode/mcp.json` file, click the **Start** button and provide the token. This has just informed GitHub Copilot of the MCP server's capabilities.
 
    ![image](https://github.com/user-attachments/assets/62ee9c06-e9d4-44e4-b6df-f93417474af2)
@@ -149,7 +156,7 @@ Before we dive into MCP, let's start up our development environment and refamili
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/99178d1b-adbe-4cf4-ab9c-3a4d29918a13" />
 
-1. Commit and push the `.vscode/mcp.json` file to the `main` branch.
+1. **Commit** and **push** the `.vscode/mcp.json` file to the `main` branch.
 
    > 🪧 **Note:** Pushing directly to `main` is not a recommended practice. It is only to simplify this exercise.
 
